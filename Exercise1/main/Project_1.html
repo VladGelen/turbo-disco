@@ -31,4 +31,55 @@
         <li><a href="https://ru.wikipedia.org/wiki/Относительность_одновременности"title="Ссылка на статью об относительности одновременности">Относительность одновременности</a></li>
         <li><a href="https://ru.wikipedia.org/wiki/Принцип_неопределённости"title="Ссылка на статью о принцепе неопределенности">Принцип неопределённости</a></li>
     </ol>
+    <li><a href="ftp://user:password@example.com/myfile.zip">Файл на сервере FTP с авторизацией</a></li>
 </ul>
+
+<form action="URL_отправки_данных" method="POST">
+    <label>
+        ФИО
+        <input type="text">
+    </label><br/>
+    <br/>
+    <label>
+        email
+        <input type="email">
+    </label><br/>
+    <br/>
+    <label>
+        Дата рождения
+        <input type="date">
+    </label><br/>
+    <label>Пол</label><br/>
+    <label>
+        Мужской
+        <input type="radio" name="radio_1">
+    </label>
+    <label>
+        Женский
+        <input type="radio" name="radio_1">
+    </label><br/>
+    <label>
+        Любимый язык программирования<br/>
+        <select name="FavPL" multiple="multiple">
+            <option value="Pascal">Pascal</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="PHP">PHP</option>
+            <option value="Java">Java</option>
+            <option value="Haskel">Haskel</option>
+            <option value="Clojure">Clojure</option>
+            <option value="Prolog">Prolog</option>
+            <option value="Scala">Scala</option>
+        </select>
+    </label><br/>
+    <label>
+        Биография:<br />
+        <textarea name="field-name-2">начальное значение</textarea>
+    </label><br/>
+    <label><input type="checkbox" checked="checked" name="check-1" />
+        С контрактом ознакомлен(а)
+    </label><br/>
+    <input type="submit" value="Сохранить" />
+</form>

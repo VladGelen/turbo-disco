@@ -9,16 +9,48 @@ img{
     height: 100px;
 }
 
+.menu{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 75%;
+    margin-top: 4%;
+
+}
+
+.menu li{
+    display: inline-block;
+}
+.menu li a{
+    display: inline-block;
+    color: blue;
+    text-decoration: none;
+    padding: auto;
+    font-size: 27px;
+    opacity:   1;
+    transition: all .07;
+    border-radius: 5px;
+    background-size: auto;
+    background-color: rgba(2, 86, 105, 0.463);
+}
+
 h3{
     margin-left: 50%;
 }
 #table-div {
     margin-left: 30%;   
-    max-width: 150px;
+    max-width: 300px;
     background-color: antiquewhite;
     margin-top: 20px;
     padding: 10px;
 }
+
+tr:nth-child(even){
+    background-color: aqua;
+}
+tr:nth-child(odd){
+    background-color: azure;
+}
+
 #top{
     width: 100%;
     background-color: aqua;

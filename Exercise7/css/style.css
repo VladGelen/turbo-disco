@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .gallery-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .gallery-slider {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .slide {
+    flex: 0 0 33.3333%; /* Each image takes up 33.3333% of the slider width */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .slide img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .pager {
+    text-align: center;
+    margin-top: 10px;
+  }
+  

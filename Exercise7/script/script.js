@@ -1,11 +1,11 @@
 $(document).ready(function() {
-    const numImages = 8; // Total number of images
-    const imagesPerPage = 3; // Number of images displayed per page
+    const numImages = 8; 
+    const imagesPerPage = 3; 
   
-    // Calculate the total number of pages
+
     const totalPages = Math.ceil(numImages / imagesPerPage);
   
-    // Initialize the pager with page numbers
+
     for (let i = 1; i <= totalPages; i++) {
       $('.pager').append(`<span class="page">${i}</span>`);
     }

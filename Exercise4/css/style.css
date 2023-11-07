@@ -1,92 +1,82 @@
-
-img{
-    float: left;
-    margin: 10px;
+img {
     width: 100px;
     height: 100px;
     border-radius: 30%;
 }
 
-.menu{
-    list-style-type: none;
-}
-
-.menu{
-    list-style-type: none;
-}
-
-.menu li a{
-    color: blueviolet;
-    text-decoration: none;
-    padding: auto;
-    font-size: 27px;
-    opacity:   1;
-    transition: all .07;
-    border-radius: 5px;
-    background-size: auto;
-    background-color: rgba(2, 86, 105, 0.463);
-}
-
-grid-gap
-
-
-
-#table-div {
-    background-color: antiquewhite;
-}
 
 tr:nth-child(even){
     background-color: aqua;
 }
+
 tr:nth-child(odd){
     background-color: azure;
 }
 
-#top{
-    width: 100%;
-    background-color: aqua;
+#company {
+    background-color: bisque;
 }
 
-#top-text{
-    background-color: antiquewhite;
+#table-div {
+    max-width: fit-content;
+    background-color: bisque;
 }
 
-#main_content{
-    max-width: 800px;
-    background-color: antiquewhite;
+#nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+    border-radius: 10%;
+    background-color: bisque;
 }
 
+#nav a:hover {
+    background-color: beige;
+    box-shadow: 3px 3px 3px rgb(151, 112, 112);
+}
 
-#form_div{
-    background-color: antiquewhite;
+#top-text {
+    font-weight: bold;
+}
+
+#main-content { 
+    background-color: bisque; 
+}
+
+#form-div {
+    max-width: 200px;
+    background-color: bisque;
+    max-width: fit-content;
 }
 
 #footer {
-    width: 100%;
-    background-color: antiquewhite; 
+    width: 100%; 
+    background-color:bisque; 
+    height: 50px;
 }
-@media screen and (min-width: 800px) {
 
-    .menu li{
-        display: inline-block;
+@media screen and (min-width: 800px) {
+    #top {
+        width: 100%; 
+        background-color:#ccc; 
+        height: 120px;
     }
-    .menu li a{
-        display: inline-block;
-        color: blue;
-        text-decoration: none;
-        font-size: 27px;
-        opacity:   1;
-        transition: all .07;
-        border-radius: 5px;
-        background-size: auto;
-        background-color: rgba(2, 86, 105, 0.463);
+    
+    #company {
+        background-color: #ccc;
     }
-    #table-div {
-        max-width: 300px;
-        background-color: antiquewhite;
+
+    #nav a {
+        background-color: rgb(56, 24, 24);
+        color: white;
     }
-    #main_content{
-        max-width: 800px;
-        background-color: antiquewhite;
+
+    #table-div, #footer, #main-content, #form-div {
+        background-color:#ccc; 
+    }
+
+    #nav a:hover {
+        background-color: rgb(104, 29, 29);
+        box-shadow: 3px 3px 3px rgb(0, 0, 0);
     }
 }

@@ -1,33 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .gallery-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .gallery-slider {
-    display: flex;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  
-  .slide {
-    flex: 0 0 33.3333%; /* Each image takes up 33.3333% of the slider width */
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
-  .slide img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .pager {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
+  background-color: bisque;
+}
+
+.slick-current {
+  box-shadow: 4px 4px 7px;
+  transition: all ease-in-out .3s;
+}
+
+.slick-prev::before, .slick-next::before {
+  font-size: 30px;
+  color: rgb(115, 28, 28);
+}
+
+.slick-dots li button:before {
+  color: rgb(115, 28, 28);
+}
+
+.slick-dots li.slick-active button:before  {
+  color: rgb(115, 28, 28);
+}
+
+img {
+  transition: all ease-in-out .3s;
+}
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+}

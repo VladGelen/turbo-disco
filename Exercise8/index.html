@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -119,55 +119,7 @@
     </div>
 </div>
 
-<script>
-    function openPopup() {
-        document.getElementById("popup").style.display = "flex";
-        // Добавление записи в историю браузера
-        history.pushState({ page: "popup" }, "Форма обратной связи", "?popup");
-    }
-
-    // Закрытие попапа
-    function closePopup() {
-        document.getElementById("popup").style.display = "none";
-        // Заменяем текущую запись в истории, чтобы изменить URL
-        history.replaceState({ page: "main" }, "Главная", "/");
-    }
-
-    // Отправка формы
-    function submitForm() {
-        // Ваш код для отправки формы с использованием AJAX
-        // Обработка успешной отправки или ошибки
-        document.getElementById("statusMessage").innerText = "Форма успешно отправлена!";
-        // Очистка данных формы
-        document.getElementById("feedbackForm").reset();
-    }
-
-    // Обработка события нажатия "Назад" в браузере
-    window.onpopstate = function (event) {
-        if (event.state && event.state.page === "popup") {
-            openPopup();
-        } else {
-            closePopup();
-        }
-    };
-
-    // Восстановление последних введенных значений из LocalStorage
-    document.addEventListener("DOMContentLoaded", function () {
-        var formFields = ["fullName", "email", "phone", "organization", "message", "consent"];
-
-        formFields.forEach(function (field) {
-            var storedValue = localStorage.getItem(field);
-            if (storedValue) {
-                document.getElementById(field).value = storedValue;
-            }
-        });
-    });
-
-    // Сохранение значений в LocalStorage при изменении полей формы
-    document.getElementById("feedbackForm").addEventListener("input", function (event) {
-        localStorage.setItem(event.target.id, event.target.value);
-    });
-</script>
+   <script src="script/script.js"></script>
 
 </body>
 </html>
